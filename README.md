@@ -1,2 +1,0 @@
-# CV
- Silvanus P. CV
