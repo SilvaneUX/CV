@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/des.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.logotopr {
+  border-radius: 50%;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.smalllog {
+  border-radius: 50%;
+  width: 5rem;
+  height: 50%;
+}
+
+nav {
+  display: flex;
+  padding: 2% 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 50px;
+}
+
+.nav-link {
+  flex: auto;
+  text-align: right;
+}
+
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-link ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.nav-link ul li::after {
+  content: "";
+  width: 0px;
+  height: 5px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  border-radius: 20%;
+  transition: 0.25s;
+  font-weight: 700;
+}
+
+.nav-link ul li:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.nav-link ul li:hover::after {
+  width: 100%;
+  transition: 0.25s;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+.text-box h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.text-box p {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 25px;
+  color: #cfcfcf;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #3dfa88;
+  background: #3dfa88;
+  color: #000;
+  transition: 0.5s;
+  font-weight: 600;
+
+}
+
+nav .ri {
+  display: none;
+}
+
+.about {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.about p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.abc {
+  flex-basis: 30%;
+  background: #fbcca6;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.75s;
+}
+
+.abc h3 {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+}
+
+.abc:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  background: #f88e37;
+}
+
+.meter {
+  height: 10px;
+  position: relative;
+  background: rgb(62, 62, 62);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(255, 112, 65);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43, 194, 83) 37%,
+    rgb(84, 240, 84) 69%
+  );
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.gal {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.gc {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.gc h3 {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  margin: 2%;
+  text-align: center;
+}
+
+.gc img {
+  height: 200px;
+  width: 350px;
+  margin: 0 auto 1em auto;
+  border-radius: 15px;
+}
+
+.galayer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.galayer:hover {
+  background: #f88e37ee ;
+  font-style: italic;
+  
+}
+
+.galayer h3 {
+  width: 100%;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.galayer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.footer p{
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.fotic a{
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  color: #0000;
+  text-decoration: none;
+  
+}
+
+.contit {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.subtit {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.zoom {
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+
+  .nav-link ul li {
+    display: block;
+  }
+
+  .nav-link {
+    position: absolute;
+    background: #ef7d31;
+    height: 100vh;
+    width: 140px;
+    top: 0;
+    right: -140px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  nav .ri1 {
+    display: block;
+    color: #000;
+    margin: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  nav .ri2 {
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .nav-link ul {
+    padding: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .about {
+    padding-top: 50px;
+  }
+
+  .about h1 {
+    font-size: 25px;
+  }
+
+  .abc {
+    width: 100%;
+    margin: 5%;
+  }
+}
+
+
